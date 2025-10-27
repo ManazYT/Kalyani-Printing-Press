@@ -3,7 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalyani Printing Press - Est. 1975</title>
+    
+    <!-- Primary Meta Tags for SEO -->
+    <title>Kalyani Printing Press | Professional Book & Commercial Printing Services</title>
+    <meta name="title" content="Kalyani Printing Press | Professional Book & Commercial Printing Services">
+    <meta name="description" content="Kalyani Printing Press offers premium book printing, business cards, brochures, and commercial printing solutions. 49+ years of excellence. Serving Jharkhand & Uttar Pradesh.">
+    <meta name="keywords" content="book printing, commercial printing, business cards, brochures, printing services, Dhanbad, Ghaziabad, Koderma, custom printing, professional printing">
+    <meta name="author" content="Kalyani Printing Press">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://kalyaniprinting.com">
+    <meta property="og:title" content="Kalyani Printing Press | Professional Book & Commercial Printing Services">
+    <meta property="og:description" content="Premium printing solutions for books, business cards, brochures, and more. 49+ years of excellence and innovation in the printing industry.">
+    <meta property="og:image" content="https://kalyaniprinting.com/og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kalyaniprinting.com">
+    <meta property="twitter:title" content="Kalyani Printing Press | Professional Book & Commercial Printing Services">
+    <meta property="twitter:description" content="Premium printing solutions for books, business cards, brochures, and more. 49+ years of excellence and innovation.">
+    <meta property="twitter:image" content="https://kalyaniprinting.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Kalyani_press_logo.png">
+    <link rel="apple-touch-icon" href="Kalyani_press_logo.png">
+    
+    <!-- Local Business Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kalyani Printing Press",
+        "image": "https://kalyaniprinting.com/logo.png",
+        "description": "Premium printing solutions including book printing, business cards, brochures, and commercial printing services",
+        "telephone": "+918368577841",
+        "email": "manasarjun78@gmail.com",
+        "url": "https://kalyaniprinting.com",
+        "foundingDate": "1975",
+        "areaServed": ["IN"],
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Station Road, Bhaga",
+                "addressLocality": "Dhanbad",
+                "addressRegion": "Jharkhand",
+                "postalCode": "828101",
+                "addressCountry": "IN"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Aditya World City",
+                "addressLocality": "Ghaziabad",
+                "addressRegion": "Uttar Pradesh",
+                "postalCode": "201010",
+                "addressCountry": "IN"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -12,7 +77,6 @@
         }
 
         body {
-            /* NOTE: If you use a custom font like 'Poppins', you need to link it in the <head> using a <link> tag. */
             font-family: 'Poppins', 'Segoe UI', sans-serif; 
             line-height: 1.6;
             color: #1a1a1a;
@@ -39,7 +103,6 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* NEW KEYFRAMES for Hero Section */
         @keyframes heroGradientShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -98,7 +161,6 @@
             margin-top: 70px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             background-size: 200% 200%;
-            /* FIXED: Using a specific animation for the hero gradient to prevent issues */
             animation: heroGradientShift 8s ease infinite; 
             color: white;
             padding: 120px 20px;
@@ -113,7 +175,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            /* Using a static SVG background. Note: this might not render correctly on all email/browser clients due to data URI */
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="80" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="20" r="3" fill="white" opacity="0.05"/><circle cx="20" cy="80" r="3" fill="white" opacity="0.05"/></svg>');
             animation: float 6s ease-in-out infinite;
         }
@@ -127,6 +188,7 @@
             position: relative;
             z-index: 2;
             animation: fadeInUp 1s ease;
+            max-width: 800px;
         }
 
         @keyframes fadeInUp {
@@ -271,16 +333,14 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
 
-        /* FIXED: Added a main container for the text and stats to correctly apply the grid/flex layout */
         .about-main-content { 
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
-            align-items: flex-start; /* Aligned to start to prevent stats stretching vertically */
+            align-items: flex-start;
         }
         
         .about-content {
-            /* The inner content of the main container, containing just text or just stats */
             width: 100%;
         }
 
@@ -306,7 +366,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
-            margin-top: 0; /* Adjusted margin to zero as it's now in a separate grid column */
+            margin-top: 0;
         }
 
         .stat {
@@ -342,7 +402,6 @@
             text-align: center;
         }
 
-        /* UPDATED GRID TO 2X2 FOR BETTER BALANCE */
         .contact-info {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -381,7 +440,7 @@
         
         .contact-box .address-list {
             text-align: left;
-            padding-left: 0; /* Removing padding from previous version */
+            padding-left: 0;
         }
 
         .contact-box .address-list strong {
@@ -400,7 +459,6 @@
             line-height: 1.6;
             margin-bottom: 15px;
         }
-
 
         footer {
             background: linear-gradient(135deg, #1a1a1a, #2d3436);
@@ -434,7 +492,6 @@
                 font-size: 18px;
             }
 
-            /* FIXED: Applied media query to the new container */
             .about-main-content {
                 grid-template-columns: 1fr;
             }
@@ -451,13 +508,11 @@
                 padding: 30px;
             }
 
-            /* RE-ALIGNING CONTACT BOXES FOR MOBILE */
             .contact-info {
                 grid-template-columns: 1fr;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -546,7 +601,7 @@
             <div class="contact-box">
                 <h4>📍 Main Office Locations</h4>
                 <div class="address-list">
-                    <strong>Jharkand (Head Office)</strong>
+                    <strong>Jharkhand (Head Office)</strong>
                     <span>
                         Station Road, Bhaga<br>
                         Dhanbad, Jharkhand
@@ -576,7 +631,7 @@
             </div>
         </div>
         
-        <a href="mailto:info@kalyaniprinting.com" class="cta-button">Start Your Project</a>
+        <a href="mailto:manasarjun78@gmail.com" class="cta-button">Start Your Project</a>
     </section>
 
     <footer>
